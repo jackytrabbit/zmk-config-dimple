@@ -54,7 +54,7 @@
     };
 
     behaviors {
-        F: F-shift {
+        FF: F-shift {
             compatible = "zmk,behavior-hold-tap";
             label = "F1";
             bindings =
@@ -66,7 +66,7 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <16>;
         };
-        J: J-shift {
+        JJ: J-shift {
             compatible = "zmk,behavior-hold-tap";
             label = "J1";
             bindings =
@@ -78,7 +78,7 @@
             hold-trigger-key-positions = <19>;
             flavor = "tap-preferred";
         };
-        G: G-L2 {
+        GG: G-L2 {
             compatible = "zmk,behavior-hold-tap";
             label = "G1";
             bindings =
@@ -90,7 +90,7 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <17>;
         };
-        H: H-L3 {
+        HH: H-L3 {
             compatible = "zmk,behavior-hold-tap";
             label = "H1";
             bindings =
@@ -109,10 +109,10 @@
 
         default_layer {
             bindings = <
-   &lt 2 ESC  &kp Q         &kp W         &kp E            &kp R   &kp T            &kp Y             &kp U            &kp I      &kp O          &kp P   &kp BSPC
-&kp LEFT_GUI  &kp A         &kp S         &kp D  &F F LEFT_SHIFT  &G G 2           &H H 3  &J J RIGHT_SHIFT            &kp K      &kp L       &kp SEMI  &kp ENTER
-   &kp LSHFT  &kp Z         &kp X         &kp C            &kp V   &kp B            &kp N             &kp M  &kp RIGHT_SHIFT     &kp UP  &kp RC(SPACE)
-   &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI      &lt 1 SPACE          &lt 3 BACKSPACE          &kp LEFT         &kp DOWN  &kp RIGHT
+   &lt 2 ESC  &kp Q         &kp W         &kp E             &kp R    &kp T            &kp Y              &kp U            &kp I      &kp O          &kp P   &kp BSPC
+&kp LEFT_GUI  &kp A         &kp S         &kp D  &FF F LEFT_SHIFT  &GG G 2          &HH H 3  &JJ J RIGHT_SHIFT            &kp K      &kp L       &kp SEMI  &kp ENTER
+   &kp LSHFT  &kp Z         &kp X         &kp C             &kp V    &kp B            &kp N              &kp M  &kp RIGHT_SHIFT     &kp UP  &kp RC(SPACE)
+   &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI       &lt 1 SPACE           &lt 3 BACKSPACE           &kp LEFT         &kp DOWN  &kp RIGHT
             >;
         };
 
