@@ -55,18 +55,8 @@
 
     behaviors {
         Fs: Fs {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FS";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_SHIFT>,
-                <&kp F>;
-
-            tapping-term-ms = <180>;
-        };
-        aa: aa {
             compatible = "zmk,behavior-hold-tap";
-            label = "AA";
+            label = "FS";
             bindings =
                 <&kp>,
                 <&kp>;
@@ -76,6 +66,65 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <16>;
         };
+        Js: Js {
+            compatible = "zmk,behavior-hold-tap";
+            label = "JS";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <18>;
+        };
+        Zs: Zs {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ZS";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <24>;
+        };
+        Na: Na {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NA";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <30>;
+            tapping-term-ms = <180>;
+        };
+        Mc: Mc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MC";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <31>;
+        };
+        Bs: Bs {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BS";
+            bindings =
+                <&M0>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <34>;
+        };
     };
 
     keymap {
@@ -83,10 +132,10 @@
 
         default_layer {
             bindings = <
-   &lt 2 ESC  &kp Q         &kp W         &kp E         &kp R  &kp T            &kp Y     &kp U            &kp I      &kp O          &kp P   &kp BSPC
-&kp LEFT_GUI  &kp A         &kp S         &kp D  &aa LSHIFT F  &kp G            &kp H     &kp J            &kp K      &kp L       &kp SEMI  &kp ENTER
-   &kp LSHFT  &kp Z         &kp X         &kp C         &kp V  &kp B            &kp N     &kp M  &kp RIGHT_SHIFT     &kp UP  &kp RC(SPACE)
-   &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI   &lt 1 SPACE         &lt 3 BACKSPACE  &kp LEFT         &kp DOWN  &kp RIGHT
+   &lt 2 ESC  &kp Q         &kp W         &kp E             &kp R    &kp T            &kp Y                &kp U            &kp I      &kp O                &kp P   &kp BSPC
+&kp LEFT_GUI  &kp A         &kp S         &kp D  &Fs F LEFT_SHIFT  &lt 2 G          &lt 3 H    &Js J RIGHT_SHIFT            &kp K      &kp L             &kp SEMI  &kp ENTER
+   &kp LSHFT  &kp Z         &kp X         &kp C             &kp V    &kp B  &Na N RIGHT_ALT  &Mc M RIGHT_CONTROL  &kp RIGHT_SHIFT     &kp UP  &Bs &m0 RIGHT_SHIFT
+   &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI       &lt 1 SPACE           &lt 3 BACKSPACE             &kp LEFT         &kp DOWN  &kp RIGHT
             >;
         };
 
