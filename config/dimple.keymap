@@ -125,6 +125,16 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <34>;
         };
+        td: td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD";
+            #binding-cells = <0>;
+            bindings =
+                <&kp F>,
+                <&kp LEFT_SHIFT>;
+
+            tapping-term-ms = <180>;
+        };
     };
 
     keymap {
@@ -132,10 +142,10 @@
 
         default_layer {
             bindings = <
-   &lt 2 ESC             &kp Q    &kp W         &kp E             &kp R    &kp T            &kp Y                &kp U     &kp I     &kp O          &kp P   &kp BSPC
-&kp LEFT_GUI             &kp A    &kp S         &kp D  &Fs LEFT_SHIFT F  &lt 2 G          &lt 3 H         &Js LSHIFT J     &kp K     &kp L       &kp SEMI  &kp ENTER
-   &kp LSHFT  &Zs LEFT_SHIFT Z    &kp X         &kp C             &kp V    &kp B   &Na LEFT_ALT N  &Mc RIGHT_CONTROL M     &none    &kp UP  &kp RC(SPACE)
-       &none                    &kp ESC  &kp LEFT_WIN       &lt 1 SPACE           &lt 3 BACKSPACE             &kp LEFT  &kp DOWN  &kp DOWN
+   &lt 2 ESC             &kp Q    &kp W         &kp E        &kp R    &kp T            &kp Y                &kp U     &kp I     &kp O          &kp P   &kp BSPC
+&kp LEFT_GUI             &kp A    &kp S         &kp D          &td  &lt 2 G          &lt 3 H         &Js LSHIFT J     &kp K     &kp L       &kp SEMI  &kp ENTER
+   &kp LSHFT  &Zs LEFT_SHIFT Z    &kp X         &kp C        &kp V    &kp B   &Na LEFT_ALT N  &Mc RIGHT_CONTROL M     &none    &kp UP  &kp RC(SPACE)
+       &none                    &kp ESC  &kp LEFT_WIN  &lt 1 SPACE           &lt 3 BACKSPACE             &kp LEFT  &kp DOWN  &kp DOWN
             >;
         };
 
