@@ -151,10 +151,10 @@
 
         lower_layer {
             bindings = <
- &kp GRAVE  &kp NUMBER_1      &kp N2       &kp N3  &kp N4  &kp N5         &kp N6    &kp N7     &kp N8      &kp N9  &kp N0  &none
-   &kp TAB         &none       &none        &none  &trans   &none       &kp LEFT    &kp UP   &kp DOWN   &kp RIGHT   &none  &none
-    &trans         &none       &none        &none   &none   &none      &kp COLON  &kp SEMI  &kp COMMA  &kp PERIOD   &none
-&bt BT_CLR                &sys_reset  &bootloader  &trans          &kp BACKSLASH  &kp PIPE     &trans       &none
+ &kp GRAVE  &kp NUMBER_1        &kp N2       &kp N3  &kp N4  &kp N5         &kp N6    &kp N7     &kp N8      &kp N9  &kp N0  &none
+   &kp TAB  &kp C_VOL_DN  &kp C_VOL_UP        &none  &trans   &none       &kp LEFT    &kp UP   &kp DOWN   &kp RIGHT   &none  &none
+    &trans         &none         &none        &none   &none   &none      &kp COLON  &kp SEMI  &kp COMMA  &kp PERIOD   &none
+&bt BT_CLR                  &sys_reset  &bootloader  &trans          &kp BACKSLASH  &kp PIPE     &trans       &none
             >;
         };
 
@@ -173,6 +173,33 @@
       &kp MINUS  &kp UNDER      &none  &trans  &trans   &none      &none         &none          &none    &kp LEFT_BRACE  &kp RIGHT_BRACE  &bt BT_SEL 1
 &kp KP_MULTIPLY        &M1        &M2     &M3     &M4  &trans  &kp SLASH  &kp QUESTION  &kp LESS_THAN  &kp GREATER_THAN     &bt BT_SEL 2
       &kp SLASH             &kp EQUAL   &none   &none              &none  &kp C_VOL_DN   &kp C_VOL_UP      &bt BT_SEL 3
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
     };
