@@ -8,6 +8,10 @@ CONFIG_BOARD_DIMPLE=y
 # Enable MPU
 CONFIG_ARM_MPU=y
 
+# stop waking up Mac
+CONFIG_ZMK_SLEEP=y # Enable deep sleep support
+CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=900000 # Milliseconds of inactivity before entering deep sleep
+
 # enable GPIO
 CONFIG_GPIO=y
 
