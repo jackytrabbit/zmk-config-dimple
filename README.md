@@ -17,7 +17,7 @@ Keymap config for Dimple Blue Edition
 3. Occasionally repeating key input. The cause has not been identified yet. Please press sys_reset when there is repeating keys and disconnection
 4. There are some issues connecting to Mac OS devices, including Mac mini, Macbook and iMac. But it's totally fine connecting to iOS or ipadOS devices.
 5. Delayed connection when startup (Might have something to do with the bluetooth hardware on PC)
-
+6. Prevents Mac from sleeping, issue here https://github.com/zmkfirmware/zmk/issues/1273 . 
 It would be much appreciated that you can report issue after using Blue version Dimple.
 
 ## Credit:
