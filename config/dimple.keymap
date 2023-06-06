@@ -169,10 +169,10 @@
 
         control_layer {
             bindings = <
-       &kp PLUS      &none      &none   &none         &none         &none         &none         &none          &none             &none            &none  &none
-      &kp MINUS  &kp UNDER      &none  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3          &none    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none
-&kp KP_MULTIPLY        &M1        &M2     &M3           &M4        &trans     &kp SLASH  &kp QUESTION  &kp LESS_THAN  &kp GREATER_THAN            &none
-      &kp SLASH             &kp EQUAL   &none         &none                       &none  &kp C_VOL_DN   &kp C_VOL_UP             &none
+       &kp PLUS      &none      &none   &none  &none   &none      &none         &none          &none             &none            &none  &none
+      &kp MINUS  &kp UNDER      &none  &trans  &none   &none      &none         &none          &none    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none
+&kp KP_MULTIPLY        &M1        &M2     &M3    &M4  &trans  &kp SLASH  &kp QUESTION  &kp LESS_THAN  &kp GREATER_THAN            &none
+      &kp SLASH             &kp EQUAL   &none  &none              &none  &bt BT_SEL 0   &bt BT_SEL 1      &bt BT_SEL 2
             >;
         };
     };
